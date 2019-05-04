@@ -4,6 +4,18 @@ html lang="ja"
     meta charset="UTF-8"
     title =current_page.data.title
     meta name="viewport" content="width=device-width"
+    meta(property="og:locale" content="ja_JP")
+    meta(property="og:type" content="website")
+    meta(property="og:title" content="#{current_page.data.title}")
+    meta(property="og:description" content="nor.ph | Noriyuki Shimizu")
+    meta(property="og:url" content="https://nor.ph")
+    meta(property="og:site_name" content="#{current_page.data.title}")
+    meta(property="og:image" content="https://nor.ph/og.png")
+    meta(property="twitter:card" content="summary_large_image")
+    meta(property="twitter:title" content="#{current_page.data.title}")
+    meta(property="twitter:description" content="nor.ph | Noriyuki Shimizu")
+    meta(property="twitter:image" content="https://nor.ph/og.png")
+    = stylesheet_link_tag "https://fonts.googleapis.com/css?family=Rubik"
     = stylesheet_link_tag "all"
     = javascript_include_tag "all"
   body class= page_classes
