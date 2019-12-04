@@ -1,0 +1,21 @@
+{
+  "name": "11ty",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:11ty": "npx @11ty/eleventy --serve",
+    "watch:sass": "npx node-sass ./stylesheets/style.sass ./stylesheets/style.css -w",
+    "dev": "npm run watch:11ty & npm run watch:sass"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+  }
+}

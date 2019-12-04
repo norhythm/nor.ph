@@ -1,0 +1,45 @@
+---
+layout: layout
+tags: post
+
+title: Nyan pierce
+date: 2019-08-03
+category: craft
+og:
+
+bgColor: "#dffffe"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    .figure-lists
+      figure
+        img(src="./nyan_pierce_blacklight.jpg", alt="" data-action="zoom" )
+
+    p(lang="ja")
+      | Maker Faire Tokyoで販売した「にゃーん」モチーフのピアス。勢いで作った。
+
+    p(lang="ja")
+      | 集光アクリルで作ったので、ブラックライトをあてるといい感じなります。
+
+  .links
+    ul
+      li
+        a(href="https://twitter.com/Nori_rhy/status/1157312307992469504" target="_blank" rel="noopener")
+          span https://twitter.com/Nori_rhy/status/1157312307992469504
+

@@ -1,0 +1,59 @@
+---
+layout: layout
+tags: post
+
+title: Shapes and Missing
+date: 2018-08-10
+category: artwork
+og:
+
+bgColor: "#ebf1e5"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - Flow and Stagnation
+
+    p
+      | Artwork for music album.
+      | Release at 2018/08/10 C94 a.k.a Comic Market. Distribution from Flow and Stagnation.
+
+  .links
+    ul
+      li
+        a(href="https://flasr.tumblr.com/post/176593059265/c94sam" target="_blank" rel="noopener")
+          span https://flasr.tumblr.com/post/176593059265/c94sam
+      li
+        a(href="https://flasr.bandcamp.com/album/shapes-and-missing" target="_blank" rel="noopener")
+          span https://flasr.bandcamp.com/album/shapes-and-missing
+
+  .credits
+    dl
+      dt Label
+      dd Flow and Stagnation
+    dl
+      dt Composer
+      dd cacono, bitscape
+    dl
+      dt Photograph
+      dd bitscape
+    dl
+      dt Mastering
+      dd spctrm [fromadistance]
+    dl
+      dt Artwork
+      dd Noriyuki Shimizu

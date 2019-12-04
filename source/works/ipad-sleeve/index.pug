@@ -1,0 +1,47 @@
+---
+layout: layout
+tags: post
+
+title: iPad sleeve
+date: 2018-11-23
+category: craft
+og:
+
+bgColor: "#fdfdfa"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    .figure-lists.col-2
+      figure
+        img(src="./ipad_sleeve_proto_1.jpg", alt="" data-action="zoom" )
+      figure
+        img(src="./ipad_sleeve_proto_2.jpg", alt="" data-action="zoom" )
+
+    p(lang="ja")
+      | iPad Pro買ったぞ！！！という昂ぶった気持ちのまま、持ち運びやすいスリーブを作ろうとした。<br/>
+      | が、プロトタイプを作ってみると使い勝手が良くない作りになってたので簡略化した。
+
+  .links
+    ul
+      li
+        a(href="https://twitter.com/Nori_rhy/status/1065545214008283136" target="_blank" rel="noopener")
+          span https://twitter.com/Nori_rhy/status/1065545214008283136
+      li
+        a(href="https://twitter.com/Nori_rhy/status/1065744864078323712" target="_blank" rel="noopener")
+          span https://twitter.com/Nori_rhy/status/1065744864078323712

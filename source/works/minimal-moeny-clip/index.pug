@@ -1,0 +1,59 @@
+---
+layout: layout
+tags: post
+
+title: Minimal money clip
+date: 2019-05-01
+category: craft
+og:
+
+bgColor: "#f5f3e4"
+style: wall
+borderWidth: 15px
+---
+
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    .figure-lists.col-2
+      figure
+        img(src="./minimal_money_clip_1.jpg", alt="" data-action="zoom" )
+      figure
+        img(src="./minimal_money_clip_2.jpg", alt="" data-action="zoom" )
+
+    .figure-lists.col-2
+      figure
+        img(src="./minimal_money_clip_3.jpg", alt="" data-action="zoom" )
+      figure
+        img(src="./minimal_money_clip_4.jpg", alt="" data-action="zoom" )
+
+    .figure-lists.col-3
+      figure
+        img(src="./minimal_money_clip_coin_1.jpg", alt="" data-action="zoom" )
+      figure
+        img(src="./minimal_money_clip_coin_2.jpg", alt="" data-action="zoom" )
+      figure
+        img(src="./minimal_money_clip_coin_3.jpg", alt="" data-action="zoom" )
+
+    p(lang="ja")
+      | 革をレーザーカッターで裁断して、折って使うマネークリップタイプの財布。<br/>
+      | めっちゃ良いです。
+
+  .links
+    ul
+      li
+        a(href="https://twitter.com/Nori_rhy/status/1123563050026524674" target="_blank" rel="noopener")
+          span https://twitter.com/Nori_rhy/status/1123563050026524674

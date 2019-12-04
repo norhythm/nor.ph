@@ -1,0 +1,60 @@
+---
+layout: layout
+tags: post
+
+title: OMNICHAPTER
+date: 2019-10-27
+category: artwork
+og:
+
+bgColor: "#252525"
+style: wall
+borderWidth: 20px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - fromadistance
+
+    p
+      | Artwork for music album.
+      | Release at 2019/10/27 M3. Distribution from fromadistance.
+
+  .links
+    ul
+      li
+        a(href="http://fromadistance.info/" target="_blank" rel="noopener")
+          span http://fromadistance.info/
+      li
+        a(href="https://fromadistance.bandcamp.com/album/omnichapter" target="_blank" rel="noopener")
+          span https://fromadistance.bandcamp.com/album/omnichapter
+
+  .credits
+    dl
+      dt Label
+      dd fromadistance
+    dl
+      dt Composer
+      dd spctrm
+    dl
+      dt Photograph
+      dd spctrm
+    dl
+      dt Mastering
+      dd spctrm
+    dl
+      dt Artwork
+      dd Noriyuki Shimizu
+

@@ -1,0 +1,120 @@
+article
+  position: relative
+  max-width: 768px
+  padding: 16px 0 96px
+  margin: 0 auto
+  +bp
+    max-width: 100%
+
+  a
+    background: linear-gradient(to right, #ff298c, #2296f9)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    -webkit-box-decoration-break: clone
+    word-break: break-all
+    word-wrap: break-word
+
+    &:hover
+
+      span
+        background-size: 100% 100%
+        // color: #fff
+
+    span
+      // padding: 5px 0
+      width: calc(100%)
+      background-image: linear-gradient(transparent calc(100% - 1px), #ff298c 1px)
+
+      // background-image: linear-gradient(#27cc97 50%, #2e3ce5 100%)
+      background-repeat: no-repeat
+      background-size: 0% 100%
+      transition: background-size .2s
+
+  header
+    position: absolute
+    top: 0
+    z-index: 5
+    transform: translateX(-96px)
+    +bp
+      position: relative
+      transform: none
+      transform: translateX(-8px)
+
+    h1
+      margin: 0
+      font-size: 64px
+      font-weight: 400
+      +bp
+        font-size: 32px
+
+  .heroarea
+    margin: 32px -256px
+    +bp
+      padding: 32px 64px
+      margin: 0 -24px 16px
+
+  .figure-lists
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-bottom: 16px
+
+    &.col-2
+
+      & > *
+        width: calc(50% - 8px)
+
+    &.col-3
+
+      & > *
+        width: calc(33.333% - 10px)
+
+  img
+    width: 100%
+    height: auto
+
+
+  .body
+    padding-bottom: 16px
+
+    h2
+      padding-bottom: 16px
+      margin: 0
+      font-weight: 400
+
+    p
+      padding-bottom: 16px
+      margin: 0
+      font-size: 18px
+
+      &[lang="ja"]
+        font-size: 16px
+
+  .links
+    padding-bottom: 32px
+    font-size: 16px
+
+    h2
+      margin: 0
+      font-size: 24px
+      font-weight: 400
+
+  .credits
+    padding-bottom: 32px
+    font-size: 16px
+
+    h2
+      margin: 0
+      font-size: 24px
+      font-weight: 400
+
+    dl
+      display: flex
+      align-items: flex-start
+      width: 100%
+
+    dt
+      margin-right: 0.25em
+
+      &::after
+        content: ":"

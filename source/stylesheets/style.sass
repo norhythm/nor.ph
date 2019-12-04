@@ -1,0 +1,195 @@
+@import "_lib.sass"
+@import "_zoom.scss"
+
+::selection
+  background-color: #222
+  color: #fff
+
+body
+  margin: 0
+  font-family: Rubik, "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Noto Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 400
+  -webkit-font-smoothing: antialiased
+  font-feature-settings: "kern", "palt"
+  line-height: 1.5
+  letter-spacing: 0.005em
+
+ul,
+dl
+  padding: 0
+  margin: 0
+
+li
+  list-style: none
+
+dd
+  margin: 0
+
+img
+  vertical-align: bottom
+
+a
+  color: inherit
+
+html,
+body
+  min-height: 100vh
+
+html
+  color: #222
+
+@import "header.sass"
+@import "footer.sass"
+@import "about.sass"
+@import "article.sass"
+@import "heroarea.sass"
+
+figure
+  margin: 0
+
+a
+  text-decoration: none
+
+#container
+  overflow: hidden
+  padding: 64px 96px
+  +bp
+    padding: 32px 24px
+
+.introduction
+  padding-bottom: 64px
+
+  h2
+    padding-bottom: 16px
+    margin: 0
+    font-size: 32px
+    font-weight: 400
+    +bp
+      font-size: 24px
+
+  p
+    margin: 0
+    font-size: 24px
+    +bp
+      font-size: 16px
+
+  ul
+    display: inline-flex
+    padding-top: 16px
+    font-size: 18px
+    +bp
+      font-size: 16px
+
+    li
+      &:last-child
+        &::after
+          display: none
+
+      &::after
+        content: "/"
+        padding: 0 0.25em
+
+  a
+    text-decoration: underline
+
+section
+
+  h2
+    // font-size: 18px
+    font-weight: 400
+
+.works
+
+  h2
+    padding: 16px 0
+    margin: 0
+    font-size: 64px
+    text-transform: uppercase
+
+.item
+  position: relative
+  padding: 48px 0 128px
+  +bp
+    padding: 0 0 48px
+    margin: 0 -24px
+
+  &:nth-child(even)
+    padding-right: 15vw
+    padding-left: 2vw
+    +bp
+      padding-right: 0
+      padding-left: 0
+
+    header
+      right: -32px
+      text-align: right
+      +bp
+        right: auto
+        left: 0
+        text-align: left
+
+      p
+        transform: translate(-3px, -0.5em)
+        +bp
+          transform: translate(1px, -0.5em)
+
+  &:nth-child(odd)
+    padding-right: 2vw
+    padding-left: 15vw
+    +bp
+      padding-right: 0
+      padding-left: 0
+
+    header
+      left: -32px
+      +bp
+        left: 0
+
+      p
+        transform: translate(3px, -0.5em)
+
+  a
+
+    &:hover
+
+      span
+        background-size: 100% 100%
+      // color: #fff
+
+    span
+      // padding: 5px 0
+      width: calc(100%)
+      background-image: linear-gradient(transparent calc(100% - 3px), #2e3ce5 3px)
+
+      // background-image: linear-gradient(#27cc97 50%, #2e3ce5 100%)
+      background-repeat: no-repeat
+      background-size: 0% 100%
+      transition: background-size .2s
+
+  header
+    position: absolute
+    z-index: 5
+    top: 0
+    display: flex
+    flex-direction: column
+    +bp
+      position: relative
+      padding: 0 16px
+
+    h3
+      margin: 0
+      font-size: 64px
+      font-weight: 400
+      +bp
+        font-size: 32px
+
+    p
+      margin: 0
+      font-size: 32px
+      font-weight: 400
+      +bp
+        font-size: 16px
+
+  .heroarea
+    +bp
+      padding: 32px 64px

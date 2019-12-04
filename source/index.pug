@@ -1,0 +1,40 @@
+---
+layout: layout
+---
+
+.introduction
+  h2 Noriyuki Shimizu
+  p Crafts, Graphic, Typeface, Front-end Engneer.
+  p All the things are work in progress.
+
+  ul
+    li <a href="https://twitter.com/Nori_rhy" target="_blank" rel="noopener">Twitter</a>
+    li <a href="https://medium.com/@norhythm" target="_blank" rel="noopener">Medium</a>
+    li <a href="https://www.instagram.com/noriyukishimizu/" target="_blank" rel="noopener">Instagram</a>
+
+
+section.works
+  //- h2 Works
+
+  .works-items
+    for post in collections.post.reverse()
+      .item
+        a(href=post.url)
+          header
+            h3
+              span
+                = post.data.title
+              p
+                = post.data.category.charAt(0).toUpperCase() + post.data.category.slice(1).toLowerCase()
+
+          .heroarea(style=`background-color: ${post.data.bgColor}` class=`${post.data.style}`)
+            .frame(style=`border-width: ${post.data.borderWidth}`)
+              figure
+                img(src=`${post.url}${post.data.title.toLowerCase().replace(/\s/g, "_")}.jpg` alt=`${post.data.title}`)
+
+        //- .item
+        //-   h3
+        //-     a(href=post.url)
+        //-       span !{post.data.title}
+        //-   span(class="tag_" + post.data.category)
+        //-     | !{ post.data.category.charAt(0).toUpperCase() + post.data.category.slice(1).toLowerCase() }

@@ -1,0 +1,38 @@
+---
+layout: layout
+tags: post
+
+title: bradtos
+date: 2018-11-10
+category: typeface
+og:
+
+bgColor: "#9a0000"
+style: wall
+borderWidth: 20px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - typeface(beta)
+
+    p
+      | * This typeface is beta version. (only [a-z][0-9].,:;/ glypes.)
+
+  .links
+    ul
+      li
+        a(href="/fonts/bradtos.zip" target="_blank" rel="noopener")
+          span Download bradtos(beta) typeface.

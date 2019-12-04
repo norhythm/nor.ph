@@ -1,0 +1,48 @@
+---
+layout: layout
+tags: post
+
+title: Artisan keycap
+date: 2019-08-06
+category: craft
+og:
+
+bgColor: "#7dab5a"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    .figure-lists.col-2
+      figure
+        img(src="./keycap_anago.jpg", alt="" data-action="zoom" )
+
+      figure
+        img(src="./keycap_animal.jpg", alt="" data-action="zoom" )
+
+    p(lang="ja")
+      | Maker Faire Tokyo で販売したアルチザンキーキャップ。<br/>
+      | 安価で販売したら自キ活の人たちに怒られました。
+
+    p(lang="ja")
+      | そもそも自作キーボードを持っていないので、いつか作りたいですね。
+
+  .links
+    ul
+      li
+        a(href="https://twitter.com/Nori_rhy/status/1157201979778584577" target="_blank" rel="noopener")
+          span https://twitter.com/Nori_rhy/status/1157201979778584577

@@ -1,0 +1,38 @@
+---
+layout: layout
+tags: post
+
+title: stem
+date: 2018-11-11
+category: typeface
+og:
+
+bgColor: "#3d5d98"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - typeface(beta)
+
+    p
+      | * This typeface is beta version. (only [a-z] glypes.)
+
+  .links
+    ul
+      li
+        a(href="/fonts/stem.zip" target="_blank" rel="noopener")
+          span Download stem(beta) typeface.

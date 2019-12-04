@@ -1,0 +1,31 @@
+---
+layout: layout
+tags: post
+
+title: Space space bar
+date: 2018-11-08
+category: craft
+og:
+
+bgColor: "#333638"
+style: wall
+borderWidth: 20px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    p
+      | Space in space...

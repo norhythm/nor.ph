@@ -1,0 +1,52 @@
+---
+layout: layout
+tags: post
+
+title: Sholder pouch
+date: 2019-09-08
+category: craft
+og:
+
+bgColor: "#d61e27"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    .figure-lists.col-2
+      figure
+        img(src="./sholder_pouch_cut.jpg", alt="" data-action="zoom" )
+
+      figure
+        img(src="./sholder_pouch_geometry.jpg", alt="" data-action="zoom" )
+
+    .figure-lists.col-2
+      figure
+        img(src="./sholder_pouch_geometry_bottom.jpg", alt="" data-action="zoom" )
+
+      figure
+        img(src="./sholder_pouch_proto.jpg", alt="" data-action="zoom" )
+
+  .links
+    ul
+      li
+        a(href="https://twitter.com/Nori_rhy/status/1170357201036165120" target="_blank" rel="noopener")
+          span https://twitter.com/Nori_rhy/status/1170357201036165120
+
+
+
+

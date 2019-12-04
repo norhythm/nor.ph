@@ -1,0 +1,60 @@
+---
+layout: layout
+tags: post
+
+title: Recite and Activation
+date: 2018-12-30
+category: artwork
+og:
+
+bgColor: "#a3b1ca"
+style: wall
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - Flow and Stagnation
+
+    p
+      | Artwork for music album.
+      | Release at 2018/12/30 C95 a.k.a Comic Market. Distribution from Flow and Stagnation.
+
+  .links
+    ul
+      li
+        a(href="https://flasr.tumblr.com/post/181168135110/flas0014" target="_blank" rel="noopener")
+          span https://flasr.tumblr.com/post/181168135110/flas0014
+
+      li
+        a(href="https://flasr.bandcamp.com/album/recite-and-activation" target="_blank" rel="noopener")
+          span https://flasr.bandcamp.com/album/recite-and-activation
+
+  .credits
+    dl
+      dt Label
+      dd Flow and Stagnation
+    dl
+      dt Composer
+      dd cacono, bitscape
+    dl
+      dt bitscape
+      dd Noriyuki Shimizu
+    dl
+      dt Mastering
+      dd spctrm [fromadistance]
+    dl
+      dt Artwork
+      dd Noriyuki Shimizu

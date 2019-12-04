@@ -1,0 +1,43 @@
+---
+layout: layout
+tags: post
+
+title: Tyvek rucksack
+date: 2019-06-09
+category: craft
+og:
+
+
+bgColor: "#35c4f9"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame(style=`border-width: ${borderWidth}`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    .figure-lists
+      figure
+        img(src="./tyvek_rucksack_roll.jpg", alt="" data-action="zoom" )
+
+    .figure-lists.col-2
+      figure
+        img(src="./tyvek_rucksack_front.jpg", alt="" data-action="zoom" )
+      figure
+        img(src="./tyvek_rucksack_back.jpg", alt="" data-action="zoom" )
+
+    p(lang="ja")
+      | ハードタイベックでリュックサックを作ってみた。<br/>
+      | 使わないときは丸めることでコンパクトに。
