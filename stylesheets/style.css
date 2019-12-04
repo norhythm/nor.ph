@@ -234,6 +234,7 @@ article {
       filter: blur(10px); }
       @media (max-width: 640px) {
         .heroarea.lean .frame::before {
+          display: none;
           top: auto;
           right: -30px;
           width: 30px;
