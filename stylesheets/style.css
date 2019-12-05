@@ -75,7 +75,7 @@ html {
     margin: 0;
     font-size: 64px;
     font-weight: 400; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .header h1 {
         font-size: 32px; } }
     .header h1 a {
@@ -104,7 +104,7 @@ article {
   max-width: 768px;
   padding: 16px 0 96px;
   margin: 0 auto; }
-  @media (max-width: 640px) {
+  @media (max-width: 769px) {
     article {
       max-width: 100%; } }
   article a {
@@ -127,7 +127,7 @@ article {
     top: 0;
     z-index: 5;
     transform: translateX(-96px); }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       article header {
         position: relative;
         transform: none;
@@ -136,12 +136,12 @@ article {
       margin: 0;
       font-size: 64px;
       font-weight: 400; }
-      @media (max-width: 640px) {
+      @media (max-width: 769px) {
         article header h1 {
           font-size: 32px; } }
   article .heroarea {
     margin: 32px -256px; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       article .heroarea {
         padding: 32px 64px;
         margin: 0 -24px 16px; } }
@@ -197,11 +197,13 @@ article {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 120px 0;
+  min-width: 800px;
+  padding: 8vh 0;
   background-color: #d6d6d6;
   background-image: url(data:image/png;base64,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); }
-  @media (max-width: 640px) {
+  @media (max-width: 769px) {
     .heroarea {
+      min-width: auto;
       padding: 60px 0; } }
   .heroarea.lean {
     perspective: 1000px; }
@@ -214,38 +216,55 @@ article {
       content: "";
       width: 100%; }
     .heroarea.lean::before {
-      bottom: 25%;
-      height: 75%;
+      bottom: 13vh;
+      height: calc(100% - 12vh);
       box-shadow: inset 0 -20px 20px -10px rgba(0, 0, 0, 0.2); }
+      @media (max-width: 769px) {
+        .heroarea.lean::before {
+          bottom: 64px;
+          height: calc(100% - 64px); } }
     .heroarea.lean::after {
-      height: 25%;
+      height: 13vh;
       border-top: 1px solid rgba(0, 0, 0, 0.05);
       box-shadow: inset 0 16px 20px -10px rgba(0, 0, 0, 0.3); }
-    .heroarea.lean .frame::before {
+      @media (max-width: 769px) {
+        .heroarea.lean::after {
+          height: 64px; } }
+    .heroarea.lean .frame-outer::before, .heroarea.lean .frame-outer::after {
       position: absolute;
-      top: 72px;
-      right: -90px;
-      bottom: -10px;
-      width: 90px;
+      right: -50px;
+      width: 60px;
       content: "";
       background-color: rgba(0, 0, 0, 0.2);
-      transform: skewX(8deg) skewY(-42deg);
-      transform-origin: left bottom;
       filter: blur(10px); }
-      @media (max-width: 640px) {
-        .heroarea.lean .frame::before {
-          display: none;
-          top: auto;
-          right: -30px;
-          width: 30px;
-          height: 200px;
-          transform: skewX(8deg) skewY(-42deg); } }
+      @media (max-width: 769px) {
+        .heroarea.lean .frame-outer::before, .heroarea.lean .frame-outer::after {
+          right: -30px; } }
+    .heroarea.lean .frame-outer::before {
+      top: 0;
+      height: calc(100% - 5vh);
+      transform: skewX(9deg);
+      transform-origin: left bottom; }
+      @media (max-width: 769px) {
+        .heroarea.lean .frame-outer::before {
+          height: calc(100% - 32px); } }
+    .heroarea.lean .frame-outer::after {
+      bottom: 0;
+      height: 5vh;
+      transform: skewX(-45deg);
+      transform-origin: left top; }
+      @media (max-width: 769px) {
+        .heroarea.lean .frame-outer::after {
+          height: 32px; } }
   .heroarea.wall .frame {
     box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5), 5px 20px 20px rgba(0, 0, 0, 0.5); }
-  .heroarea .frame {
+  .heroarea .frame-outer {
     position: relative;
     z-index: 3;
-    transform: rotateX(3deg);
+    transform: rotateX(3deg); }
+  .heroarea .frame {
+    position: relative;
+    z-index: 4;
     border-top: 20px solid #333333;
     border-right: 20px solid #000000;
     border-bottom: 20px solid #000000;
@@ -255,10 +274,9 @@ article {
     .heroarea .frame figure {
       position: relative;
       overflow: hidden;
-      height: 500px;
       padding: 20px;
       background-color: #fff; }
-      @media (max-width: 640px) {
+      @media (max-width: 769px) {
         .heroarea .frame figure {
           height: auto; } }
       .heroarea .frame figure::after {
@@ -275,11 +293,13 @@ article {
         mix-blend-mode: overlay; }
       .heroarea .frame figure img {
         width: auto;
-        height: 100%; }
-        @media (max-width: 640px) {
+        height: 35vw;
+        max-height: 500px; }
+        @media (max-width: 769px) {
           .heroarea .frame figure img {
             width: 100%;
-            height: auto; } }
+            height: auto;
+            max-height: 100%; } }
 
 figure {
   margin: 0; }
@@ -290,7 +310,7 @@ a {
 #container {
   overflow: hidden;
   padding: 64px 96px; }
-  @media (max-width: 640px) {
+  @media (max-width: 769px) {
     #container {
       padding: 32px 24px; } }
 
@@ -301,20 +321,20 @@ a {
     margin: 0;
     font-size: 32px;
     font-weight: 400; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .introduction h2 {
         font-size: 24px; } }
   .introduction p {
     margin: 0;
     font-size: 24px; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .introduction p {
         font-size: 16px; } }
   .introduction ul {
     display: inline-flex;
     padding-top: 16px;
     font-size: 18px; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .introduction ul {
         font-size: 16px; } }
     .introduction ul li:last-child::after {
@@ -337,46 +357,49 @@ section h2 {
 .item {
   position: relative;
   padding: 48px 0 128px; }
-  @media (max-width: 640px) {
+  @media (max-width: 769px) {
     .item {
       padding: 0 0 48px;
       margin: 0 -24px; } }
   .item:nth-child(even) {
     padding-right: 15vw;
     padding-left: 2vw; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .item:nth-child(even) {
         padding-right: 0;
         padding-left: 0; } }
     .item:nth-child(even) header {
       right: -32px;
       text-align: right; }
-      @media (max-width: 640px) {
+      @media (max-width: 769px) {
         .item:nth-child(even) header {
           right: auto;
           left: 0;
           text-align: left; } }
       .item:nth-child(even) header p {
         transform: translate(-3px, -0.5em); }
-        @media (max-width: 640px) {
+        @media (max-width: 769px) {
           .item:nth-child(even) header p {
             transform: translate(1px, -0.5em); } }
   .item:nth-child(odd) {
     padding-right: 2vw;
     padding-left: 15vw; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .item:nth-child(odd) {
         padding-right: 0;
         padding-left: 0; } }
     .item:nth-child(odd) header {
       left: -32px; }
-      @media (max-width: 640px) {
+      @media (max-width: 769px) {
         .item:nth-child(odd) header {
           left: 0; } }
       .item:nth-child(odd) header p {
         transform: translate(3px, -0.5em); }
   .item a:hover span {
     background-size: 100% 100%; }
+  .item a:hover .heroarea {
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 0 #2e3ce5; }
   .item a span {
     width: calc(100%);
     background-image: linear-gradient(transparent calc(100% - 3px), #2e3ce5 3px);
@@ -389,7 +412,7 @@ section h2 {
     top: 0;
     display: flex;
     flex-direction: column; }
-    @media (max-width: 640px) {
+    @media (max-width: 769px) {
       .item header {
         position: relative;
         padding: 0 16px; } }
@@ -397,16 +420,19 @@ section h2 {
       margin: 0;
       font-size: 64px;
       font-weight: 400; }
-      @media (max-width: 640px) {
+      @media (max-width: 769px) {
         .item header h3 {
           font-size: 32px; } }
     .item header p {
       margin: 0;
       font-size: 32px;
       font-weight: 400; }
-      @media (max-width: 640px) {
+      @media (max-width: 769px) {
         .item header p {
           font-size: 16px; } }
-  @media (max-width: 640px) {
-    .item .heroarea {
-      padding: 32px 64px; } }
+  .item .heroarea {
+    box-shadow: none;
+    transition: box-shadow 0.2s ease, transform 0.2s ease; }
+    @media (max-width: 769px) {
+      .item .heroarea {
+        padding: 32px 64px; } }

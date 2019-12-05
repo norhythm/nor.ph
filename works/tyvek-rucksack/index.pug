@@ -20,9 +20,10 @@ article
         = title
 
   .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
-    .frame(style=`border-width: ${borderWidth}`)
-      figure
-        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+    .frame-outer
+      .frame(style=`border-width: ${borderWidth}`)
+        figure
+          img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
 
   .body
     h2

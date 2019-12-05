@@ -27,6 +27,7 @@ section.works
                 = post.data.category.charAt(0).toUpperCase() + post.data.category.slice(1).toLowerCase()
 
           .heroarea(style=`background-color: ${post.data.bgColor}` class=`${post.data.style}`)
-            .frame(style=`border-width: ${post.data.borderWidth}`)
-              figure
-                img(src=`${post.url}${post.data.title.toLowerCase().replace(/\s/g, "_")}.jpg` alt=`${post.data.title}`)
+            .frame-outer
+              .frame(style=`border-width: ${post.data.borderWidth}`)
+                figure
+                  img(src=`${post.url}${post.data.title.toLowerCase().replace(/\s/g, "_")}.jpg` alt=`${post.data.title}`)
