@@ -1,4 +1,7 @@
 module.exports = function(eleventyConfig) {
+
+  eleventyConfig.addPassthroughCopy("javascripts");
+
   return {
     templateFormats: [
       "njk",
@@ -6,7 +9,6 @@ module.exports = function(eleventyConfig) {
       "css",
       "png",
       "jpg",
-      "js",
       "ico",
       "zip"
     ]
