@@ -14,7 +14,6 @@ layout: layout
 
 
 section.works
-  //- h2 Works
 
   .works-items
     for post in collections.post.reverse()
@@ -31,10 +30,3 @@ section.works
             .frame(style=`border-width: ${post.data.borderWidth}`)
               figure
                 img(src=`${post.url}${post.data.title.toLowerCase().replace(/\s/g, "_")}.jpg` alt=`${post.data.title}`)
-
-        //- .item
-        //-   h3
-        //-     a(href=post.url)
-        //-       span !{post.data.title}
-        //-   span(class="tag_" + post.data.category)
-        //-     | !{ post.data.category.charAt(0).toUpperCase() + post.data.category.slice(1).toLowerCase() }
