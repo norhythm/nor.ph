@@ -8,7 +8,8 @@
     "watch:11ty": "npx @11ty/eleventy --serve",
     "watch:sass": "npx node-sass ./stylesheets/style.sass ./stylesheets/style.css -w --output-style compressed",
     "watch:og": "npx node-sass ./stylesheets/og.sass ./stylesheets/og.css -w --output-style compressed",
-    "dev": "npm run watch:11ty & npm run watch:sass & npm run watch:og"
+    "dev": "npm run watch:11ty & npm run watch:sass & npm run watch:og",
+    "build": "npx @11ty/eleventy"
   },
   "keywords": [],
   "author": "",

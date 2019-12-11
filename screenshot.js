@@ -13,12 +13,12 @@ function delay(ms) {
     width: 1200,
     height: 630,
   });
-  const url = 'http://localhost:8080';
+  const url = 'http://localhost:5000';
 
   for (list of lists) {
     await page.goto(`${url}/${list}/`);
-    page.addStyleTag({url: `${url}/stylesheets/og.css`});
-
+    await page.addStyleTag({url: `${url}/stylesheets/og.css`});
+    await delay(1000);
     await page.screenshot({
       path: `${list}/og.png`,
       clip: {
@@ -27,7 +27,8 @@ function delay(ms) {
         width: 1200,
         height: 630
     }});
-    await delay(400);
+    console.log('Done:', list);
   }
   await browser.close();
+  console.log("Almost done!")
 })();

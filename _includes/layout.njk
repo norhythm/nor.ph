@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
   <meta property="og:description" content="nor.ph | Noriyuki Shimizu">
   <meta property="og:url" content="https://nor.ph">
   <meta property="og:site_name" content="{{ title + " | " if title }}nor.ph">
-  <meta property="og:image" content="https://nor.ph/og.png">
+  <meta property="og:image" content="https://nor.ph/{{ page.url | replace('/', '', 1) if og }}og.png">
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="{{ title + " | " if title }}nor.ph">
   <meta property="twitter:description" content="nor.ph | Noriyuki Shimizu">
@@ -23,7 +23,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'UA-153843226-1');
   </script>
 </head>
