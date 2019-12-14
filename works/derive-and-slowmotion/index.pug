@@ -1,0 +1,59 @@
+---
+layout: layout
+tags: post
+
+title: Derive and Slowmotion
+date: 2019-12-31
+category: artwork
+og: true
+
+bgColor: "#ff3563"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame-outer
+      .frame(style=`border-width: ${borderWidth}`)
+        figure
+          img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - Flow and Stagnation
+
+    p
+      | Artwork for music album.
+      | Release at 2019/12/31 C97 a.k.a Comic Market. Distribution from Flow and Stagnation.
+
+  .links
+    ul
+      li
+        a(href="https://flasr.tumblr.com/post/189650549440/derive-and-slowmotion-flas0016-191231" target="_blank" rel="noopener")
+          span https://flasr.tumblr.com/post/189650549440/derive-and-slowmotion-flas0016-191231
+
+  .credits
+    dl
+      dt Label
+      dd Flow and Stagnation
+    dl
+      dt Composer
+      dd cacono, bitscape, syatten, wat
+    dl
+      dt Photograph
+      dd Noriyuki Shimizu
+    dl
+      dt Mastering
+      dd spctrm (fromadistance)
+    dl
+      dt Artwork
+      dd Noriyuki Shimizu
+
+
