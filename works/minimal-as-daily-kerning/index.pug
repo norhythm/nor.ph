@@ -1,0 +1,39 @@
+---
+layout: layout
+tags: post
+
+title: minimal as Daily kerning
+date: 2020-12-28
+category: training
+og: true
+
+bgColor: "#fff5fd"
+style: wall
+borderWidth: 5px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame-outer
+      .frame(style=`border-width: ${borderWidth}`)
+        figure
+          img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+
+    p
+      | Detail article is below here on Medium.<br/>
+      | <a href="https://medium.com/@norhythm/how-about-daily-kerning-48b18d688aeb" target="_blank" rel="noopener">How about “Daily kerning”.</a>
+
+  .links
+    ul
+      li
+        a(href="/images/minimal_as_daily_kerning.ai.zip" target="_blank" rel="noopener")
+          span Download Illustrator file(ai).
