@@ -1,0 +1,59 @@
+---
+layout: layout
+tags: post
+
+title: Fuse and Layering
+date: 2021-12-31
+category: artwork
+og: true
+
+bgColor: "#35ffd0"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame-outer
+      .frame(style=`border-width: ${borderWidth}`)
+        figure
+          img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - Flow and Stagnation
+
+    p
+      | Artwork for music album.
+      | Release at 2021/12/31 C99 a.k.a Comic Market. Distribution from Flow and Stagnation.
+
+  .links
+    ul
+      li
+        a(href="https://flasr.tumblr.com/post/671532756699889664/fuse-and-layering-flas0017-211231-release" target="_blank" rel="noopener")
+          span https://flasr.tumblr.com/post/671532756699889664/fuse-and-layering-flas0017-211231-release
+
+  .credits
+    dl
+      dt Label
+      dd Flow and Stagnation
+    dl
+      dt Composer
+      dd cacono
+    dl
+      dt Photograph
+      dd cacono
+    dl
+      dt Mastering
+      dd spctrm (fromadistance)
+    dl
+      dt Artwork
+      dd Noriyuki Shimizu
+
+
