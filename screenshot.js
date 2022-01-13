@@ -13,7 +13,7 @@ function delay(ms) {
     width: 1200,
     height: 630,
   });
-  const url = 'http://localhost:5000';
+  const url = 'http://localhost:3000';
 
   for (list of lists) {
     await page.goto(`${url}/${list}/`);
