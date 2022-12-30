@@ -20,6 +20,7 @@
     "@11ty/eleventy": "^1.0.0",
     "dir-to-json": "^1.0.0",
     "node-sass": "^7.0.1",
-    "puppeteer": "^2.0.0"
+    "puppeteer": "^2.0.0",
+    "serve": "^14.1.2"
   }
 }
