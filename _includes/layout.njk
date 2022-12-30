@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title + " | " if title }}nor.ph">
   <meta property="og:description" content="nor.ph | Noriyuki Shimizu">
-  <meta property="og:url" content="https://nor.ph{{ page.url | replace('/', '', 1) if og }}">
+  <meta property="og:url" content="https://nor.ph{{ "/" + page.url | replace('/', '', 1) if og }}">
   <meta property="og:site_name" content="{{ title + " | " if title }}nor.ph">
   <meta property="og:image" content="https://nor.ph/{{ page.url | replace('/', '', 1) if og }}og.png">
   <meta property="twitter:card" content="summary_large_image">
