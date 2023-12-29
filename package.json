@@ -11,16 +11,16 @@
     "dev": "npm run watch:11ty & npm run watch:sass & npm run watch:og",
     "build": "npx @11ty/eleventy",
     "serve": "serve _site",
-    "og": "node screenshot.js"
+    "og": "node screenshot.js",
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.1",
     "dir-to-json": "^1.0.0",
-    "node-sass": "^7.0.1",
-    "puppeteer": "^2.0.0",
-    "serve": "^14.1.2"
+    "node-sass": "^9.0.0",
+    "puppeteer": "^21.6.1",
+    "serve": "^14.2.1"
   }
 }
