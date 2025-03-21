@@ -1,0 +1,59 @@
+---
+layout: layout
+tags: post
+
+title: Haze and Disruption
+date: 2024-10-27
+category: artwork (arrangement)
+og: true
+
+bgColor: "#5d08dd"
+style: lean
+borderWidth: 10px
+---
+
+article
+  header
+    h1
+      span
+        = title
+
+  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+    .frame-outer
+      .frame(style=`border-width: ${borderWidth}`)
+        figure
+          img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+
+  .body
+    h2
+      = title
+      |  - Flow and Stagnation
+
+    p
+      | Artwork (arrangement) for music album.
+      | Release at 2024/10/27 M3. Distribution from Flow and Stagnation.
+
+  .links
+    ul
+      li
+        a(href="https://flasr.tumblr.com/post/765137891487842304/haze-and-disruption" target="_blank" rel="noopener")
+          span https://flasr.tumblr.com/post/765137891487842304/haze-and-disruption
+
+  .credits
+    dl
+      dt Label
+      dd Flow and Stagnation
+    dl
+      dt Composer
+      dd cacono
+    dl
+      dt Artwork
+      dd cacono
+    dl
+      dt Mastering
+      dd spctrm (fromadistance)
+    dl
+      dt Artwork arrangement
+      dd Noriyuki Shimizu
+
+
