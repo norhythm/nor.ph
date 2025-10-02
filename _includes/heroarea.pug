@@ -1,0 +1,9 @@
+.heroarea(style=`background-color: ${bgColor}` class=`${style}`)
+  .frame-outer
+    .frame-edge.frame-edge-tl(style=`width: ${borderWidth * 1.4}px`)
+    .frame-edge.frame-edge-tr(style=`width: ${borderWidth * 1.4}px`)
+    .frame-edge.frame-edge-bl(style=`width: ${borderWidth * 1.4}px`)
+    .frame-edge.frame-edge-br(style=`width: ${borderWidth * 1.4}px`)
+    .frame(style=`border-width: ${borderWidth}px`)
+      figure
+        img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)

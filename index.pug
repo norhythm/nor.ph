@@ -28,6 +28,10 @@ section.works
 
           .heroarea(style=`background-color: ${post.data.bgColor}` class=`${post.data.style}`)
             .frame-outer
-              .frame(style=`border-width: ${post.data.borderWidth}`)
+              .frame-edge.frame-edge-tl(style=`width: ${post.data.borderWidth * 1.4}px`)
+              .frame-edge.frame-edge-tr(style=`width: ${post.data.borderWidth * 1.4}px`)
+              .frame-edge.frame-edge-bl(style=`width: ${post.data.borderWidth * 1.4}px`)
+              .frame-edge.frame-edge-br(style=`width: ${post.data.borderWidth * 1.4}px`)
+              .frame(style=`border-width: ${post.data.borderWidth}px`)
                 figure
                   img(src=`${post.url}${post.data.title.toLowerCase().replace(/\s/g, "_")}.jpg` alt=`${post.data.title}`)

@@ -9,7 +9,7 @@ og: true
 
 bgColor: "#fff815"
 style: wall
-borderWidth: 10px
+borderWidth: 10
 ---
 
 article
@@ -18,11 +18,7 @@ article
       span
         = title
 
-  .heroarea(style=`background-color: ${bgColor}` class=`${style}`)
-    .frame-outer
-      .frame(style=`border-width: ${borderWidth}`)
-        figure
-          img(src=`./${title.toLowerCase().replace(/\s/g, "_")}.jpg` data-action="zoom" alt=`${title}`)
+  include ../../_includes/heroarea.pug
 
   .body
     h2
